@@ -17,9 +17,8 @@
         "build": {
           "builder":  "@angular-builders/custom-webpack:browser",
           "options": {
-            "browserTarget": "banking-app-frontend:build",
             "customWebpackConfig": {
-              "path": "./custom-webpack.config.js",
+              "path": "./webpack.config.js",
               "replaceDuplicatePlugins": true
             },
             "outputPath": "dist/banking-app-frontend",
@@ -70,8 +69,7 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "customWebpackConfig": {
-              "path": "./custom-webpack.config.js",
-              "browserTarget": "banking-app-frontend:build"
+              "path": "./webpack.config.js"
             },
           "configurations": {
             "production": {
